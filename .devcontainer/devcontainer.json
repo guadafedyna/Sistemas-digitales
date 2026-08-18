@@ -1,7 +1,7 @@
 {
   "name": "sd-dev",
   "image": "docker.io/twint/sd:latest",
-  "initializeCommand": "xhost +local:root",
+ // "initializeCommand": "xhost +local:root",
   "features": {},
   "runArgs": [
     "--net=host",
