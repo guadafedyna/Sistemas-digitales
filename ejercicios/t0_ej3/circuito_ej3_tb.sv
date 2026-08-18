@@ -32,10 +32,10 @@ module circuito_ej3_tb;
   // value = {a, b}
   always_comb begin
     case (value)
-      2'b00:   exp = 1'b0;  // TODO: a=0, b=0 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
-      2'b01:   exp = 1'b0;  // TODO: a=0, b=1 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
-      2'b10:   exp = 1'b0;  // TODO: a=1, b=0 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
-      2'b11:   exp = 1'b0;  // TODO: a=1, b=1 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
+      2'b00:   exp = 1'b0;  // TO DO: a=0, b=0 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
+      2'b01:   exp = 1'b1;  // TO DO: a=0, b=1 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
+      2'b10:   exp = 1'b1;  // TO DO: a=1, b=0 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
+      2'b11:   exp = 1'b0;  // TO DO: a=1, b=1 → y = ? (completar con 1'b0 si quiero que y valga 0, o 1'b1 si quiero que y valga 1)
       default: exp = 1'b0;
     endcase
   end

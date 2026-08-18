@@ -8,10 +8,9 @@ module circuito_ej2 (
 
   logic p, q;
 
-  // TODO: completar las asignaciones
-  // assign p = ...;
-  // assign q = ...;
-  // assign ...
-  assign y = 1'b0; // borrar este assign provisional de y
+  // TO DO: completar las asignaciones
+  assign p = a & b;
+  assign q = ~a & c;
+  assign y = p | q; // borrar este assign provisional de y
 
-endmodule
+endmodule   

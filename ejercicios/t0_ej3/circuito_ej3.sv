@@ -6,10 +6,22 @@ module circuito_ej3 (
     input  logic b,
     output logic y
 );
+  logic p,q;
 
-  // TODO: declarar señales internas si hacen falta
-  // TODO: completar las asignaciones según el diagrama
-  // (borrar el assign provisional de y)
-  assign y = 1'b0;
+  assign p = ~a & b;
+  assign q = a & ~b;
+  assign y = p | q;
+
+  //otra forma de resolver. por propiedad conmutativa de la disyuncion y conjuncion, es equivalente: 
+
+  // input logic a,
+  // input logic b,
+  // output logic y 
+  //);
+   // logic p,q;
+
+  //assign p = b & ~a;
+  //assign q = ~b & a;
+  //assign y = q | p;
 
 endmodule
